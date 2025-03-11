@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import VideoPlayer from './components/VideoPlayer';
+const videoUrl = "https://director.taihotel.asia/v4/variant/VE1gTdz0mLzRnLv52bt9SMhFjdtM3ajFmc09iZyETMlFWYiFmY4ETL1MzM50CMkBDNtMmNwMTLwYGM0gjYllzL.m3u8";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          <div>
+              <h1>Live Stream</h1>
+              <VideoPlayer src={videoUrl} />
+          </div>
     </div>
   );
 }
